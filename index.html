@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Quote Generator</title>
   </head>
@@ -22,7 +23,7 @@
         <h1>AI Quote Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form action="" id="quote-gen-form">
           <input
             type="text"
             placeholder="Enter the topic"
@@ -33,10 +34,7 @@
           />
           <input type="submit" class="submit-btn" />
         </form>
-        <div class="quote">
-          Quote will be generated here <br />
-          and some text here
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
 
       <footer>
