@@ -24,19 +24,23 @@
         <h1>AI Quote Generator</h1>
       </header>
       <main>
-        <form action="" id="quote-gen-form">
-          <input
-            type="text"
-            placeholder="Enter the topic"
-            class="instructions"
-            autofocus
-            required
-            autocomplete="off"
-						id="user-instructions"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form action="" id="quote-gen-form">
+            <input
+              type="text"
+              placeholder="Enter the topic for the quote"
+              class="instructions"
+              autofocus
+              required
+              autocomplete="off"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+					<div class="hint">i.e: life, joy, time</div>
+        </div>
+
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>
