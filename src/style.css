@@ -68,6 +68,10 @@ form {
 	border-radius: 10px;
 	margin-bottom: 30px;
 }
+.quote strong {
+	color: blue;
+	font-family: "Allerta Stencil", sans-serif;
+}
 
 footer {
 	font-size: 14px;
