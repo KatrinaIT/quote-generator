@@ -3,39 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Quote Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Quote Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <div>Quote will be generated here</div>
-      </form>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI Quote Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic"
+            class="instructions"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" class="submit-btn" />
+        </form>
+        <div class="quote">
+          Quote will be generated here <br />
+          and some text here
+        </div>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/KatrinaIT" target="_blank">Kate</a> and is
-      open-sourced on
-      <a href="https://github.com/KatrinaIT/quote-generator" target="_blank"
-        >GitHub</a
-      >, hosted on
-      <a href="https://quotes-generator-ai.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-      >
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/KatrinaIT" target="_blank">Kate</a> and is
+        open-sourced on
+        <a href="https://github.com/KatrinaIT/quote-generator" target="_blank"
+          >GitHub</a
+        >, hosted on
+        <a href="https://quotes-generator-ai.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
 
     <script src="src/script.js"></script>
   </body>
