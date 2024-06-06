@@ -15,7 +15,7 @@ function generateQuote(event) {
   let apiKey = "1ad00cd57fae02a14f050bfc3o387tf2";
   let prompt = `please generate the wisdom quote for the provided topic of ${instructionsInput.value}`;
   let context =
-    "you are an experienced wisdom guru, life coach, who knows human psychology. you use old and modern wisdom sayings to teach people how to live life with fullfillment, joy, and gratitude. Who is productive and successful in each aspect of life. Sign the quote on the new line at the end inside the <strong> element with 'Your Wisdom Coach ClAI'";
+    "you are an experienced wisdom guru, life coach, who knows human psychology. you use old and modern wisdom sayings to teach people how to live life with fullfillment, joy, and gratitude. Who is productive and successful in each aspect of life. Add at the end <br /> and on the new line 'Your Wisdom Coach ClAI' inside the <strong> element";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayQuote);
